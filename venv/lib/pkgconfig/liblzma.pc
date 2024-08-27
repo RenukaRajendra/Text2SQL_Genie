@@ -1,0 +1,20 @@
+#
+# Author: Lasse Collin
+#
+# This file has been put into the public domain.
+# You can do whatever you want with this file.
+#
+
+prefix=/Users/renuka-mac/Documents/UdemyProjects/Text2SQL_Genie/venv
+exec_prefix=/Users/renuka-mac/Documents/UdemyProjects/Text2SQL_Genie/venv
+libdir=/Users/renuka-mac/Documents/UdemyProjects/Text2SQL_Genie/venv/lib
+includedir=/Users/renuka-mac/Documents/UdemyProjects/Text2SQL_Genie/venv/include
+
+Name: liblzma
+Description: General purpose data compression library
+URL: https://xz.tukaani.org/xz-utils/
+Version: 5.4.6
+Cflags: -I${includedir}
+Cflags.private: -DLZMA_API_STATIC
+Libs: -L${libdir} -llzma
+Libs.private: -pthread -lpthread
